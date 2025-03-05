@@ -1,0 +1,19 @@
+sudo apt install rsync -y    
+sudo yum install rsync -y     
+
+ssh usuario@192.168.1.20
+o
+ssh-keygen -t rsa
+ssh-copy-id usuario@192.168.1.20
+
+rsync -avz /ruta/origen/ usuario@192.168.1.20:/ruta/destino/
+
+rsync -avz --update /ruta/origen/ usuario@192.168.1.20:/ruta/destino/
+
+
+*/5 * * * * rsync -avz /ruta/origen/ usuario@192.168.1.20:/ruta/destino/
+
+
+subir un apache con configurar kipanai
+
+touch doc{1..100}
