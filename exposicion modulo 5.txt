@@ -17,3 +17,19 @@ rsync -avz --update /ruta/origen/ usuario@192.168.1.20:/ruta/destino/
 subir un apache con configurar kipanai
 
 touch doc{1..100}
+
+
+
+sudo dnf install epel-release -y
+
+sudo dnf install pacemaker corosync pcs -y
+
+sudo dnf install hearbeat
+
+sudo dnf config-manager --set-enabled ha
+
+sudo dnf config-manager --set-enabled rhel-8-for-x86_64-highavailability-rpms
+
+sudo dnf repolist all
+
+
